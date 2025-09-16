@@ -9,6 +9,10 @@ export KBUILD_BUILD_HOST=Ubuntu-Wsl
 export ARCH=arm64
 export SUBARCH=arm64
 
+# KernelSu
+echo "KernelSU..."
+git submodule update --init "$(pwd)/KernelSU"
+
 export KCFLAGS=-w
 export CONFIG_SECTION_MISMATCH_WARN_ONLY=y
 JOBS=$(nproc --all)
