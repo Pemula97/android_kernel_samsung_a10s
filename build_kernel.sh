@@ -1,6 +1,6 @@
 #!/bin/bash
 
-export PATH=$(pwd)/toolchain/clang-r353983c/bin:$PATH
+export PATH=$(pwd)/toolchain/bin:$PATH
 export CROSS_COMPILE=aarch64-linux-gnu-
 export CC=clang
 export CLANG_TRIPLE=aarch64-linux-gnu-
